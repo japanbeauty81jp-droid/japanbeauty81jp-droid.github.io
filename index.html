@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>韓美 -kanbi-</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #1a0a2e 0%, #16213e 50%, #0f3460 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 480px;
+      width: 100%;
+    }
+    .profile {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #e96c9e, #9b5de5);
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+    }
+    .name {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    .bio {
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .link-item {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 16px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.2s ease;
+      backdrop-filter: blur(10px);
+    }
+    .link-item:hover {
+      background: rgba(255,255,255,0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .link-emoji {
+      font-size: 22px;
+      margin-right: 14px;
+      flex-shrink: 0;
+    }
+    .link-text {
+      flex: 1;
+    }
+    .link-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .link-desc {
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+    }
+    .arrow {
+      color: rgba(255,255,255,0.4);
+      font-size: 18px;
+      margin-left: 8px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 28px;
+      color: rgba(255,255,255,0.3);
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="profile">
+      <div class="avatar">🌙</div>
+      <div class="name">韓美 -kanbi-</div>
+      <div class="bio">韓国コスメ・アジア美容の世界観をお届け<br>Kpopスタイル × ガラス肌ルーティン</div>
+    </div>
+    <div class="links" id="links">
+      <a class="link-item" href="https://www.amazon.co.jp/dp/B09Y8QXRMP?tag=kanbi81-22" target="_blank" rel="noopener">
+        <span class="link-emoji">💄</span>
+        <div class="link-text">
+          <div class="link-title">TIRTIR マスクフィットクッション</div>
+          <div class="link-desc">韓国No.1クッション・透明感ある仕上がり</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-item" href="https://www.amazon.co.jp/dp/B07897WRVD?tag=kanbi81-22" target="_blank" rel="noopener">
+        <span class="link-emoji">💋</span>
+        <div class="link-text">
+          <div class="link-title">LANEIGE リップスリーピングマスク</div>
+          <div class="link-desc">就寝中にぷるぷる唇へ・世界的ベストセラー</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-item" href="https://www.amazon.co.jp/dp/B09BNWLQ7K?tag=kanbi81-22" target="_blank" rel="noopener">
+        <span class="link-emoji">🌸</span>
+        <div class="link-text">
+          <div class="link-title">rom&nd ジューシーラスティングティント</div>
+          <div class="link-desc">Kpopアイドル御用達・落ちにくい発色</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-item" href="https://www.amazon.co.jp/dp/B07MXLK8BK?tag=kanbi81-22" target="_blank" rel="noopener">
+        <span class="link-emoji">✨</span>
+        <div class="link-text">
+          <div class="link-title">SOME BY MI AHA・BHA・PHAトナー</div>
+          <div class="link-desc">ガラス肌への韓国式スキンケア</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+      <a class="link-item" href="https://x.com/JBeauty8168670" target="_blank" rel="noopener">
+        <span class="link-emoji">𝕏</span>
+        <div class="link-text">
+          <div class="link-title">X（Twitter）をフォロー</div>
+          <div class="link-desc">@JBeauty8168670 · 毎日更新中</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+    </div>
+    <div class="footer">© 2026 韓美 -kanbi-</div>
+  </div>
+</body>
+</html>
