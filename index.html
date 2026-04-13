@@ -10,92 +10,37 @@
       font-family: 'Helvetica Neue', Arial, sans-serif;
       background: linear-gradient(135deg, #1a0a2e 0%, #16213e 50%, #0f3460 100%);
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       padding: 20px;
     }
-    .container {
-      max-width: 480px;
-      width: 100%;
-    }
-    .profile {
-      text-align: center;
-      margin-bottom: 32px;
-    }
+    .container { max-width: 480px; width: 100%; }
+    .profile { text-align: center; margin-bottom: 32px; }
     .avatar {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
+      width: 80px; height: 80px; border-radius: 50%;
       background: linear-gradient(135deg, #e96c9e, #9b5de5);
       margin: 0 auto 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: flex; align-items: center; justify-content: center;
       font-size: 32px;
     }
-    .name {
-      color: #fff;
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      margin-bottom: 8px;
-    }
-    .bio {
-      color: rgba(255,255,255,0.7);
-      font-size: 14px;
-      line-height: 1.6;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
+    .name { color: #fff; font-size: 22px; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 8px; }
+    .bio { color: rgba(255,255,255,0.7); font-size: 14px; line-height: 1.6; }
+    .links { display: flex; flex-direction: column; gap: 12px; }
     .link-item {
-      display: flex;
-      align-items: center;
+      display: flex; align-items: center;
       background: rgba(255,255,255,0.08);
       border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px;
-      padding: 16px 20px;
-      text-decoration: none;
-      color: #fff;
-      transition: all 0.2s ease;
-      backdrop-filter: blur(10px);
+      border-radius: 16px; padding: 16px 20px;
+      text-decoration: none; color: #fff;
+      transition: all 0.2s ease; backdrop-filter: blur(10px);
     }
-    .link-item:hover {
-      background: rgba(255,255,255,0.15);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-    }
-    .link-emoji {
-      font-size: 22px;
-      margin-right: 14px;
-      flex-shrink: 0;
-    }
-    .link-text {
-      flex: 1;
-    }
-    .link-title {
-      font-size: 15px;
-      font-weight: 600;
-      margin-bottom: 2px;
-    }
-    .link-desc {
-      font-size: 12px;
-      color: rgba(255,255,255,0.55);
-    }
-    .arrow {
-      color: rgba(255,255,255,0.4);
-      font-size: 18px;
-      margin-left: 8px;
-    }
-    .footer {
-      text-align: center;
-      margin-top: 28px;
-      color: rgba(255,255,255,0.3);
-      font-size: 12px;
-    }
+    .link-item:hover { background: rgba(255,255,255,0.15); transform: translateY(-2px); }
+    .link-emoji { font-size: 22px; margin-right: 14px; flex-shrink: 0; }
+    .link-text { flex: 1; }
+    .link-title { font-size: 15px; font-weight: 600; margin-bottom: 2px; }
+    .link-desc { font-size: 12px; color: rgba(255,255,255,0.55); }
+    .arrow { color: rgba(255,255,255,0.4); font-size: 18px; margin-left: 8px; }
+    .footer { text-align: center; margin-top: 28px; color: rgba(255,255,255,0.3); font-size: 12px; }
+    .section-label { color: rgba(255,255,255,0.4); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; margin: 16px 0 8px 4px; }
   </style>
 </head>
 <body>
@@ -105,8 +50,9 @@
       <div class="name">韓美 -kanbi-</div>
       <div class="bio">韓国コスメ・アジア美容の世界観をお届け<br>Kpopスタイル × ガラス肌ルーティン</div>
     </div>
-    <div class="links" id="links">
-      <a class="link-item" href="https://www.amazon.co.jp/dp/B09Y8QXRMP?tag=kanbi81-22" target="_blank" rel="noopener">
+    <div class="links">
+      <div class="section-label">💄 おすすめ韓国コスメ</div>
+      <a class="link-item" href="https://www.amazon.co.jp/dp/B09LCMQM44?tag=kanbi81-22" target="_blank" rel="noopener">
         <span class="link-emoji">💄</span>
         <div class="link-text">
           <div class="link-title">TIRTIR マスクフィットクッション</div>
@@ -114,7 +60,7 @@
         </div>
         <span class="arrow">›</span>
       </a>
-      <a class="link-item" href="https://www.amazon.co.jp/dp/B07897WRVD?tag=kanbi81-22" target="_blank" rel="noopener">
+      <a class="link-item" href="https://www.amazon.co.jp/s?k=LANEIGE+リップスリーピングマスク&tag=kanbi81-22" target="_blank" rel="noopener">
         <span class="link-emoji">💋</span>
         <div class="link-text">
           <div class="link-title">LANEIGE リップスリーピングマスク</div>
@@ -122,7 +68,7 @@
         </div>
         <span class="arrow">›</span>
       </a>
-      <a class="link-item" href="https://www.amazon.co.jp/dp/B09BNWLQ7K?tag=kanbi81-22" target="_blank" rel="noopener">
+      <a class="link-item" href="https://www.amazon.co.jp/s?k=romand+juicy+lasting+tint&tag=kanbi81-22" target="_blank" rel="noopener">
         <span class="link-emoji">🌸</span>
         <div class="link-text">
           <div class="link-title">rom&nd ジューシーラスティングティント</div>
@@ -130,11 +76,20 @@
         </div>
         <span class="arrow">›</span>
       </a>
-      <a class="link-item" href="https://www.amazon.co.jp/dp/B07MXLK8BK?tag=kanbi81-22" target="_blank" rel="noopener">
+      <a class="link-item" href="https://www.amazon.co.jp/s?k=SOME+BY+MI+AHA+BHA+PHA+トナー&tag=kanbi81-22" target="_blank" rel="noopener">
         <span class="link-emoji">✨</span>
         <div class="link-text">
           <div class="link-title">SOME BY MI AHA・BHA・PHAトナー</div>
           <div class="link-desc">ガラス肌への韓国式スキンケア</div>
+        </div>
+        <span class="arrow">›</span>
+      </a>
+      <div class="section-label">📖 記事・SNS</div>
+      <a class="link-item" href="https://note.com/kirebi81_22" target="_blank" rel="noopener">
+        <span class="link-emoji">📝</span>
+        <div class="link-text">
+          <div class="link-title">note — 韓国コスメ深掘り記事</div>
+          <div class="link-desc">口コミまとめ・使い方ガイド</div>
         </div>
         <span class="arrow">›</span>
       </a>
